@@ -57,7 +57,7 @@ class Map extends React.Component{
             const marker = new mapboxgl.Marker()
                                     .setLngLat([location.id,location.id])
                                     .setPopup(new mapboxgl.Popup({offset:30})
-                                    .setHTML('<h3>' + location.data  +  '</h3>')
+                                    .setHTML('<h3>' + location.data  +  '</h3>' + '<h4>' + location.region + '</h4>')
                                     )
                                     
                                     .addTo(map);
